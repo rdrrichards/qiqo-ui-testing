@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent implements OnInit {
-
+  appTitle = 'This is the name of the application';
   constructor() { }
 
   ngOnInit() {

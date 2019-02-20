@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+top-bar {
+  height: 50px;
+  background-color: cadetblue;
+  padding: 20px;
+  color: whitesmoke;
+  font-weight: bolder
+}

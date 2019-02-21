@@ -16,5 +16,8 @@ export class ContentAreaComponent implements OnInit {
   toggleMenu() {
     this.shellService.toggleMenubar();
   }
-
+  toss() {
+    // console.log('about to throw');
+    throw new Error('This is a **fake** error from the application');
+  }
 }

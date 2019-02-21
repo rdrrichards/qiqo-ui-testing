@@ -4,3 +4,27 @@
   <app-menu-bar></app-menu-bar>
   <app-content-area></app-content-area>
 </div>
+
+<!-- <p-messages position="top-center"></p-messages> -->
+
+
+<p-toast position="center" key="c" (onClose)="onReject()" [modal]="true" [baseZIndex]="5000"
+  [style]="{'width': '500px','height': '500px'}">
+  <ng-template let-message pTemplate="message">
+      <div style="text-align: center">
+          <i class="pi pi-exclamation-triangle" style="font-size: 3em"></i>
+          <h3>{{message.summary}}</h3>
+          <p>{{message.detail}}</p>
+          <p>{{message.detail}}</p>
+          <p>{{message.detail}}</p>
+      </div>
+      <div class="ui-g ui-fluid">
+          <div class="ui-g-6">
+              <button type="button" pButton (click)="onConfirm()" label="Report Error" class="ui-button-success"></button>
+          </div>
+          <div class="ui-g-6">
+              <button type="button" pButton (click)="onReject()" label="Dismiss" class="ui-button-secondary"></button>
+          </div>
+      </div>
+  </ng-template>
+</p-toast>

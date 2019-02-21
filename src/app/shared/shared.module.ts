@@ -5,6 +5,8 @@ import { MenuModule } from 'primeng/menu';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { ButtonModule } from 'primeng/button';
 import { PanelModule } from 'primeng/panel';
+import { ToastModule } from 'primeng/toast';
+import { MessagesModule } from 'primeng/messages';
 
 @NgModule({
   declarations: [],
@@ -14,14 +16,19 @@ import { PanelModule } from 'primeng/panel';
     MenuModule,
     PanelMenuModule,
     ButtonModule,
-    PanelModule
+    PanelModule,
+    ToastModule,
+    MessagesModule
   ],
   exports: [
     ScrollPanelModule,
     MenuModule,
     PanelMenuModule,
     ButtonModule,
-    PanelModule
-  ]
+    PanelModule,
+    ToastModule,
+    MessagesModule
+  ],
+  providers: [ ]
 })
 export class SharedModule { }

@@ -7,6 +7,7 @@ import { ButtonModule } from 'primeng/button';
 import { PanelModule } from 'primeng/panel';
 import { ToastModule } from 'primeng/toast';
 import { MessagesModule } from 'primeng/messages';
+import { TabViewModule } from 'primeng/tabview';
 
 @NgModule({
   declarations: [],
@@ -18,7 +19,8 @@ import { MessagesModule } from 'primeng/messages';
     ButtonModule,
     PanelModule,
     ToastModule,
-    MessagesModule
+    MessagesModule,
+    TabViewModule
   ],
   exports: [
     ScrollPanelModule,
@@ -27,7 +29,8 @@ import { MessagesModule } from 'primeng/messages';
     ButtonModule,
     PanelModule,
     ToastModule,
-    MessagesModule
+    MessagesModule,
+    TabViewModule
   ],
   providers: [ ]
 })

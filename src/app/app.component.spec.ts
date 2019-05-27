@@ -1,12 +1,19 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { TopBarComponent } from './shell/top-bar/top-bar.component';
+import { SqlEditorComponent } from './sql-editor/sql-editor.component';
+import { SharedModule } from './shared/shared.module';
+import { AceEditorModule } from 'ng2-ace-editor';
+import { MessageService } from 'primeng/api';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent, TopBarComponent, SqlEditorComponent,
       ],
+      imports: [SharedModule, AceEditorModule],
+      providers: [MessageService]
     }).compileComponents();
   }));
 
@@ -20,12 +27,5 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('primeng-test');
-  });
-
-  it('should render title in a h1 tag', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to primeng-test!');
   });
 });

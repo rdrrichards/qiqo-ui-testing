@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MenuBarComponent } from './menu-bar.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('MenuBarComponent', () => {
   let component: MenuBarComponent;
@@ -8,7 +10,8 @@ describe('MenuBarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MenuBarComponent ]
+      declarations: [ MenuBarComponent ],
+      imports: [SharedModule, BrowserAnimationsModule]
     })
     .compileComponents();
   }));

@@ -23,7 +23,7 @@
     "ng2-ace-editor": "^0.3.9",
     "primeflex": "^1.0.0-rc.1",
     "primeicons": "^1.0.0",
-    "primeng": "^8.0.0-rc.1",
+    "primeng": "^8.0.0",
     "rxjs": "~6.5.2",
     "tslib": "^1.9.3",
     "zone.js": "~0.9.1"
@@ -45,7 +45,7 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
     "protractor": "~6.0.0",
-    "ts-node": "~8.2.0",
+    "ts-node": "~8.3.0",
     "tslint": "~5.17.0",
     "typescript": "~3.4.3"
   }

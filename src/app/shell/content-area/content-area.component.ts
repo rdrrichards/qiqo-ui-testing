@@ -18,6 +18,6 @@ export class ContentAreaComponent implements OnInit {
   }
   toss() {
     // console.log('about to throw');
-    throw new Error('This is a **fake** error from the application');
+    // throw new Error('This is a **fake** error from the application');
   }
 }

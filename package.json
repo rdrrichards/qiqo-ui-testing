@@ -19,7 +19,6 @@
     "@angular/platform-browser": "9.0.0-rc.8",
     "@angular/platform-browser-dynamic": "9.0.0-rc.8",
     "@angular/router": "9.0.0-rc.8",
-    "ng2-ace-editor": "^0.3.9",
     "primeflex": "^1.0.0",
     "primeicons": "^2.0.0",
     "primeng": "^9.0.0-rc.2",

@@ -21,7 +21,7 @@
     "@angular/router": "9.0.0-rc.9",
     "primeflex": "^1.0.0",
     "primeicons": "^2.0.0",
-    "primeng": "^9.0.0-rc.2",
+    "primeng": "^9.0.0-rc.3",
     "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

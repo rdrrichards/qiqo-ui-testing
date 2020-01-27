@@ -8,6 +8,7 @@ import { PanelModule } from 'primeng/panel';
 import { ToastModule } from 'primeng/toast';
 import { MessagesModule } from 'primeng/messages';
 import { TabViewModule } from 'primeng/tabview';
+import { ContextMenuModule } from 'primeng/contextmenu';
 
 @NgModule({
   declarations: [],
@@ -20,7 +21,8 @@ import { TabViewModule } from 'primeng/tabview';
     PanelModule,
     ToastModule,
     MessagesModule,
-    TabViewModule
+    TabViewModule,
+    ContextMenuModule
   ],
   exports: [
     ScrollPanelModule,
@@ -30,7 +32,8 @@ import { TabViewModule } from 'primeng/tabview';
     PanelModule,
     ToastModule,
     MessagesModule,
-    TabViewModule
+    TabViewModule,
+    ContextMenuModule
   ],
   providers: [ ]
 })

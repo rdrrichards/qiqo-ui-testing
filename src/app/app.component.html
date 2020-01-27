@@ -10,7 +10,7 @@
 
 <!-- <app-select-testing></app-select-testing> -->
 <p-contextMenu #appCxMenu [model]="items" ></p-contextMenu>
-<button pButton type="button" (click)="appCxMenu.toggle()" icon="pi pi-cog"></button>
+<button pButton type="button" (click)="showAppMenu($event, appCxMenu)" icon="pi pi-cog"></button>
 
 <p-toast position="center" key="c" (onClose)="onReject()" [modal]="true" [baseZIndex]="5000"
   [style]="{'width': '500px','height': '500px'}">

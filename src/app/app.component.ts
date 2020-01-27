@@ -43,8 +43,10 @@ export class AppComponent {
   onReject() {
     this.messageService.clear('c');
   }
-  // showAppMenu() {
-  //   console.log('open menu');
-  //   this.appCxMenu.show();
-  // }
+  showAppMenu(event: any, appCxMenu: ContextMenu) {
+    console.log('open menu');
+    event.preventDefault();
+    event.stopPropagation();
+    appCxMenu.show(event);
+  }
 }

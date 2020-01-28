@@ -14,26 +14,17 @@ export class AppComponent {
   constructor(private messageService: MessageService) {
     this.items = [
       {
-          label: 'File',
-          items: [{
-                  label: 'New',
-                  icon: 'pi pi-fw pi-plus',
-                  items: [
-                      {label: 'Project'},
-                      {label: 'Other'},
-                  ]
-              },
-              {label: 'Open'},
-              {label: 'Quit'}
-          ]
+        label: 'Recent',
+        icon: 'pi pi-fw pi-clock'
       },
       {
-          label: 'Edit',
-          icon: 'pi pi-fw pi-pencil',
-          items: [
-              {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-              {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
-          ]
+        label: 'About',
+      },
+      {
+        separator: true,
+      },
+      {
+        label: 'Logout',
       }
   ];
   }

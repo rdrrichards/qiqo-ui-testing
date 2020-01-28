@@ -3,14 +3,17 @@
 <div class="p-grid">
   <!-- <app-menu-bar></app-menu-bar> -->
   <!-- <app-content-area></app-content-area> -->
+  <div class="p-col-11"></div>
+  <div class="p-col-1">
+    <p-contextMenu #appCxMenu [model]="items" ></p-contextMenu>
+    <button pButton type="button" (click)="showAppMenu($event, appCxMenu)" icon="pi pi-cog" style="float: right;"></button>
+  </div>
 </div>
 <!-- <app-sql-editor></app-sql-editor> -->
 
 <!-- <p-messages position="top-center"></p-messages> -->
 
 <!-- <app-select-testing></app-select-testing> -->
-<p-contextMenu #appCxMenu [model]="items" ></p-contextMenu>
-<button pButton type="button" (click)="showAppMenu($event, appCxMenu)" icon="pi pi-cog"></button>
 
 <p-toast position="center" key="c" (onClose)="onReject()" [modal]="true" [baseZIndex]="5000"
   [style]="{'width': '500px','height': '500px'}">

@@ -10,6 +10,7 @@ import { ContextMenu } from 'primeng/contextmenu';
 export class AppComponent {
   title = 'primeng-test';
   items: MenuItem[];
+  displayAbout = false;
   // @ViewChild(ContextMenu, { static: true }) appCxMenu: ContextMenu;
   constructor(private messageService: MessageService) {
     this.items = [
@@ -18,7 +19,7 @@ export class AppComponent {
         icon: 'pi pi-fw pi-clock'
       },
       {
-        label: 'About',
+        label: 'About', command: (event) => { this.displayAbout = true; }
       },
       {
         separator: true,
@@ -28,6 +29,9 @@ export class AppComponent {
       }
   ];
   }
+  // showAbout() {
+  //   this.displayAbout = true;
+  // }
   onConfirm() {
     this.messageService.clear('c');
   }

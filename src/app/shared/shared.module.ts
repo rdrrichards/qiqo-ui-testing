@@ -9,11 +9,13 @@ import { ToastModule } from 'primeng/toast';
 import { MessagesModule } from 'primeng/messages';
 import { TabViewModule } from 'primeng/tabview';
 import { ContextMenuModule } from 'primeng/contextmenu';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
+    DialogModule,
     ScrollPanelModule,
     MenuModule,
     PanelMenuModule,
@@ -25,6 +27,7 @@ import { ContextMenuModule } from 'primeng/contextmenu';
     ContextMenuModule
   ],
   exports: [
+    DialogModule,
     ScrollPanelModule,
     MenuModule,
     PanelMenuModule,

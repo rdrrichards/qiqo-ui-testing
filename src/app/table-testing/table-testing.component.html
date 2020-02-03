@@ -1,0 +1,20 @@
+<h3>Dynamic Columns</h3>
+<p-table [columns]="cols" [value]="cars">
+    <ng-template pTemplate="header" let-columns>
+        <tr>
+            <th *ngFor="let col of columns">
+                {{col.header}}
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-columns="columns">
+        <tr>
+            <td *ngFor="let col of columns">
+              <span *ngIf="col.field === 'status'">
+                <i class="pi {{rowData[col.field]}}" style="color: red; font-size: 1.75em"></i>
+              </span>
+              <span *ngIf="col.field !== 'status'">{{rowData[col.field]}}</span>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>

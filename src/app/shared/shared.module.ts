@@ -10,6 +10,7 @@ import { MessagesModule } from 'primeng/messages';
 import { TabViewModule } from 'primeng/tabview';
 import { ContextMenuModule } from 'primeng/contextmenu';
 import { DialogModule } from 'primeng/dialog';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [],
@@ -24,7 +25,8 @@ import { DialogModule } from 'primeng/dialog';
     ToastModule,
     MessagesModule,
     TabViewModule,
-    ContextMenuModule
+    ContextMenuModule,
+    TableModule
   ],
   exports: [
     DialogModule,
@@ -36,7 +38,8 @@ import { DialogModule } from 'primeng/dialog';
     ToastModule,
     MessagesModule,
     TabViewModule,
-    ContextMenuModule
+    ContextMenuModule,
+    TableModule
   ],
   providers: [ ]
 })

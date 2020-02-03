@@ -9,11 +9,13 @@ import { AppErrorHandler } from './shared/error-handler';
 import { MessageService } from 'primeng/api';
 import { SharedModule } from './shared/shared.module';
 import { SelectTestingComponent } from './select-testing/select-testing.component';
+import { TableTestingComponent } from './table-testing/table-testing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SelectTestingComponent
+    SelectTestingComponent,
+    TableTestingComponent
   ],
   imports: [
     BrowserModule,

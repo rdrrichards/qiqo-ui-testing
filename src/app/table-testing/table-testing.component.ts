@@ -14,7 +14,8 @@ export class TableTestingComponent implements OnInit {
   ngOnInit() {
     // this.carService.getCarsSmall().then(cars => this.cars = cars);
     this.cars = [
-      { status: 'pi-compass', vin: '938429huhed98ujq3', year: '2017', brand: 'Acura', color: 'Silver' }
+      { status: 'pi-thumbs-up', statusColor: 'red', vin: '938429huhed98ujq3', year: '2017', brand: 'Acura', color: 'Silver' },
+      { status: 'pi-check-circle', statusColor: 'blue', vin: 'huhed98ujq3938429', year: '2020', brand: 'Toyota', color: 'Blue' }
     ];
     this.cols = [
         { field: 'status', header: 'Status' },

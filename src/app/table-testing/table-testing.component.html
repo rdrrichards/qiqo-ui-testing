@@ -11,7 +11,7 @@
         <tr>
             <td *ngFor="let col of columns">
               <span *ngIf="col.field === 'status'">
-                <i class="pi {{rowData[col.field]}}" style="color: red; font-size: 1.75em"></i>
+                <i class="pi {{rowData[col.field]}}" style="font-size: 1.75em" [style.color]="rowData['statusColor']"></i>
               </span>
               <span *ngIf="col.field !== 'status'">{{rowData[col.field]}}</span>
             </td>

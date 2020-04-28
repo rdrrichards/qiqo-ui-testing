@@ -11,6 +11,7 @@ import { TabViewModule } from 'primeng/tabview';
 import { ContextMenuModule } from 'primeng/contextmenu';
 import { DialogModule } from 'primeng/dialog';
 import { TableModule } from 'primeng/table';
+import { SidebarModule } from 'primeng/sidebar';
 
 @NgModule({
   declarations: [],
@@ -26,7 +27,8 @@ import { TableModule } from 'primeng/table';
     MessagesModule,
     TabViewModule,
     ContextMenuModule,
-    TableModule
+    TableModule,
+    SidebarModule
   ],
   exports: [
     DialogModule,
@@ -39,7 +41,8 @@ import { TableModule } from 'primeng/table';
     MessagesModule,
     TabViewModule,
     ContextMenuModule,
-    TableModule
+    TableModule,
+    SidebarModule
   ],
   providers: [ ]
 })

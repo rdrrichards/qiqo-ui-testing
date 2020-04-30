@@ -1,9 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
-
 top-bar {
   height: 50px;
   background-color: cadetblue;
   padding: 20px;
   color: whitesmoke;
   font-weight: bolder
+}
+
+.ui-button {
+  background-color:white !important;
+  border-color:white !important;
+  color:black !important;
+  font-size: 1.5em !important;
+  font-weight: bolder !important;
+  margin: 2px !important;
+}
+
+body .ui-button.ui-button-icon-only {
+  width: 1.5em !important;
+  height: 1.5em !important;
 }

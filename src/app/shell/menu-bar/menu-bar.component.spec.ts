@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { MenuBarComponent } from './menu-bar.component';
 import { SharedModule } from 'src/app/shared/shared.module';
@@ -8,7 +8,7 @@ describe('MenuBarComponent', () => {
   let component: MenuBarComponent;
   let fixture: ComponentFixture<MenuBarComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ MenuBarComponent ],
       imports: [SharedModule, BrowserAnimationsModule]

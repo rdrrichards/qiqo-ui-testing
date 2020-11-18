@@ -1,11 +1,11 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './shell/top-bar/top-bar.component';
 import { SharedModule } from './shared/shared.module';
 import { MessageService } from 'primeng/api';
 
 describe('AppComponent', () => {
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent, TopBarComponent

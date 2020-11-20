@@ -10,6 +10,7 @@ import { MessageService } from 'primeng/api';
 import { SharedModule } from './shared/shared.module';
 import { SelectTestingComponent } from './select-testing/select-testing.component';
 import { TableTestingComponent } from './table-testing/table-testing.component';
+import { TreeTestingModule } from './tree-testing/tree-testing.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { TableTestingComponent } from './table-testing/table-testing.component';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     ShellModule,
+    TreeTestingModule,
     SharedModule
   ],
   providers: [ MessageService, { provide: ErrorHandler, useClass: AppErrorHandler, deps: [ MessageService ] } ],

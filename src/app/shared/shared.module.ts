@@ -13,6 +13,7 @@ import { DialogModule } from 'primeng/dialog';
 import { TableModule } from 'primeng/table';
 import { SidebarModule } from 'primeng/sidebar';
 import { TreeModule } from 'primeng/tree';
+import { DropdownModule } from 'primeng/dropdown';
 
 @NgModule({
   declarations: [],
@@ -30,7 +31,8 @@ import { TreeModule } from 'primeng/tree';
     ContextMenuModule,
     TableModule,
     SidebarModule,
-    TreeModule
+    TreeModule,
+    DropdownModule
   ],
   exports: [
     DialogModule,
@@ -45,7 +47,8 @@ import { TreeModule } from 'primeng/tree';
     ContextMenuModule,
     TableModule,
     SidebarModule,
-    TreeModule
+    TreeModule,
+    DropdownModule
   ],
   providers: [ ]
 })

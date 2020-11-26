@@ -11,12 +11,14 @@ import { SharedModule } from './shared/shared.module';
 import { SelectTestingComponent } from './select-testing/select-testing.component';
 import { TableTestingComponent } from './table-testing/table-testing.component';
 import { TreeTestingModule } from './tree-testing/tree-testing.module';
+import { DropdownTestingComponent } from './dropdown-testing/dropdown-testing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SelectTestingComponent,
-    TableTestingComponent
+    TableTestingComponent,
+    DropdownTestingComponent
   ],
   imports: [
     BrowserModule,

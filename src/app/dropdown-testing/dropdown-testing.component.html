@@ -1,3 +1,11 @@
-<p-dropdown [options]="clientReports"
+<!-- <p-dropdown [options]="clientReports"
   ([ngModel])="selectedReport" (onChange)="onReportChange($event)"
-  placeholder="Choose a report" [group]="true">
+  placeholder="Choose a report" [group]="true"> -->
+
+<span class="p-input-icon-right">
+    <i class="pi pi-search"></i>
+    <p-autoComplete styleClass="p-autocomplete-list-item"
+      [suggestions]="clientReports" field="name" >
+    </p-autoComplete>
+</span>
+

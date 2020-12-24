@@ -14,6 +14,7 @@ import { TableModule } from 'primeng/table';
 import { SidebarModule } from 'primeng/sidebar';
 import { TreeModule } from 'primeng/tree';
 import { DropdownModule } from 'primeng/dropdown';
+import { AutoCompleteModule } from 'primeng/autocomplete';
 
 @NgModule({
   declarations: [],
@@ -32,7 +33,8 @@ import { DropdownModule } from 'primeng/dropdown';
     TableModule,
     SidebarModule,
     TreeModule,
-    DropdownModule
+    DropdownModule,
+    AutoCompleteModule
   ],
   exports: [
     DialogModule,
@@ -48,7 +50,8 @@ import { DropdownModule } from 'primeng/dropdown';
     TableModule,
     SidebarModule,
     TreeModule,
-    DropdownModule
+    DropdownModule,
+    AutoCompleteModule
   ],
   providers: [ ]
 })

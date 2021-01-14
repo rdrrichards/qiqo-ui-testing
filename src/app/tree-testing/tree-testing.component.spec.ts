@@ -1,3 +1,4 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TreeTestingComponent } from './tree-testing.component';
@@ -8,7 +9,8 @@ describe('TreeTestingComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TreeTestingComponent ]
+      declarations: [ TreeTestingComponent ],
+      imports: [HttpClientTestingModule]
     })
     .compileComponents();
   });

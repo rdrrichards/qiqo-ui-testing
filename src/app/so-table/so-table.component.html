@@ -1,0 +1,25 @@
+<p-table [columns]="cols" [value]="memberships" [(selection)]="selectedMembership" dataKey="membership">
+  <ng-template pTemplate="header" let-columns>
+      <tr>
+          <th style="width: 3em"></th>
+          <th *ngFor="let col of columns">
+              {{col.header}}
+          </th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+      <tr [pSelectableRow]="rowData">
+          <td>
+              <p-tableRadioButton [value]="rowData"></p-tableRadioButton>
+          </td>
+          <td *ngFor="let col of columns">
+              {{rowData[col.field]}}
+          </td>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="summary">
+          <div style="text-align: left">
+              Selected Member: {{selectedMembership ?? selectedMembership.membership + ' - ' + selectedMembership.joinDate + ' - ' + selectedMembership.endDate}}
+          </div>
+      </ng-template>
+      </p-table>

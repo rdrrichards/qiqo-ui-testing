@@ -12,13 +12,15 @@ import { SelectTestingComponent } from './select-testing/select-testing.componen
 import { TableTestingComponent } from './table-testing/table-testing.component';
 import { TreeTestingModule } from './tree-testing/tree-testing.module';
 import { DropdownTestingComponent } from './dropdown-testing/dropdown-testing.component';
+import { SoTableComponent } from './so-table/so-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SelectTestingComponent,
     TableTestingComponent,
-    DropdownTestingComponent
+    DropdownTestingComponent,
+    SoTableComponent
   ],
   imports: [
     BrowserModule,

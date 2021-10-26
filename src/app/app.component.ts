@@ -43,4 +43,7 @@ export class AppComponent {
     event.stopPropagation();
     appCxMenu.show(event);
   }
+  otherWindow(event: any): void {
+    const viewer = window.open('http://localhost:4201', 'My Other Window', 'left=50,top=50,width=400,height=300');
+  }
 }

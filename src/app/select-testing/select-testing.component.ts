@@ -14,8 +14,8 @@ export class SelectTestingComponent implements OnInit {
     { countryCode: 'MX', countryName: 'Mexico' }
   ];
   form: FormGroup = new FormGroup({});
-  constructor(private fb: FormBuilder) {
-    this.form = this.fb.group({
+  constructor(private formBuilder: FormBuilder) {
+    this.form = this.formBuilder.group({
       countryCode: ''
     });
   }

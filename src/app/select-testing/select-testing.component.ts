@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-select-testing',
@@ -13,8 +13,8 @@ export class SelectTestingComponent implements OnInit {
     { countryCode: 'CA', countryName: 'Canada' },
     { countryCode: 'MX', countryName: 'Mexico' }
   ];
-  form: FormGroup = new FormGroup({});
-  constructor(private formBuilder: FormBuilder) {
+  form: UntypedFormGroup = new UntypedFormGroup({});
+  constructor(private formBuilder: UntypedFormBuilder) {
     this.form = this.formBuilder.group({
       countryCode: ''
     });

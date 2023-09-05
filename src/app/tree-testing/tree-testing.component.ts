@@ -9,8 +9,8 @@ import { NodeService } from './node.service';
 })
 export class TreeTestingComponent implements OnInit {
   files: TreeNode[] = [];
-  selectedFiles: TreeNode[] = [];
-  selectedFilesB: TreeNode[] = [];
+  selectedFiles: TreeNode<any> | TreeNode<any>[] = [];
+  selectedFilesB: TreeNode<any> | TreeNode<any>[] = [];
   constructor(private nodeService: NodeService) { }
 
   ngOnInit(): void {

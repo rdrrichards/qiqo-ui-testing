@@ -3,16 +3,9 @@ import { CommonModule } from '@angular/common';
 import { TreeTestingComponent } from './tree-testing.component';
 import { TreeModule } from 'primeng/tree';
 import {TreeDragDropService} from 'primeng/api';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
-@NgModule({
-  declarations: [TreeTestingComponent],
-  imports: [
-    CommonModule,
-    TreeModule,
-    HttpClientModule
-  ],
-  exports: [TreeTestingComponent],
-  providers: [TreeDragDropService]
-})
+@NgModule({ declarations: [TreeTestingComponent],
+    exports: [TreeTestingComponent], imports: [CommonModule,
+        TreeModule], providers: [TreeDragDropService, provideHttpClient(withInterceptorsFromDi())] })
 export class TreeTestingModule { }

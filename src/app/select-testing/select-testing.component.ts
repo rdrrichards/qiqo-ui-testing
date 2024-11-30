@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder } from '@angular/forms';
 
 @Component({
-  selector: 'app-select-testing',
-  templateUrl: './select-testing.component.html',
-  styleUrls: ['./select-testing.component.css']
+    selector: 'app-select-testing',
+    templateUrl: './select-testing.component.html',
+    styleUrls: ['./select-testing.component.css'],
+    standalone: false
 })
 export class SelectTestingComponent implements OnInit {
   countries = [

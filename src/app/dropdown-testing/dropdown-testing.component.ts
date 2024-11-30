@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { SelectItemGroup } from 'primeng/api';
 
 @Component({
-  selector: 'app-dropdown-testing',
-  templateUrl: './dropdown-testing.component.html',
-  styleUrls: ['./dropdown-testing.component.css']
+    selector: 'app-dropdown-testing',
+    templateUrl: './dropdown-testing.component.html',
+    styleUrls: ['./dropdown-testing.component.css'],
+    standalone: false
 })
 export class DropdownTestingComponent implements OnInit {
   sourceData = [

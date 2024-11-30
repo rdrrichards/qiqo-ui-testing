@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-so-table',
-  templateUrl: './so-table.component.html',
-  styleUrls: ['./so-table.component.css']
+    selector: 'app-so-table',
+    templateUrl: './so-table.component.html',
+    styleUrls: ['./so-table.component.css'],
+    standalone: false
 })
 export class SoTableComponent implements OnInit {
   selectedMembership: any;

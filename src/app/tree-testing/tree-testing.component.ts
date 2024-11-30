@@ -3,9 +3,10 @@ import { TreeNode } from 'primeng/api';
 import { NodeService } from './node.service';
 
 @Component({
-  selector: 'app-tree-testing',
-  templateUrl: './tree-testing.component.html',
-  styleUrls: ['./tree-testing.component.css']
+    selector: 'app-tree-testing',
+    templateUrl: './tree-testing.component.html',
+    styleUrls: ['./tree-testing.component.css'],
+    standalone: false
 })
 export class TreeTestingComponent implements OnInit {
   files: TreeNode[] = [];

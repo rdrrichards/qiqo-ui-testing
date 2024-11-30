@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { ShellService } from '../shell.service';
 
 @Component({
-  selector: 'app-content-area',
-  templateUrl: './content-area.component.html',
-  styleUrls: ['./content-area.component.css']
+    selector: 'app-content-area',
+    templateUrl: './content-area.component.html',
+    styleUrls: ['./content-area.component.css'],
+    standalone: false
 })
 export class ContentAreaComponent implements OnInit {
 

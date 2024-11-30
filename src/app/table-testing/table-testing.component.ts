@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-table-testing',
-  templateUrl: './table-testing.component.html',
-  styleUrls: ['./table-testing.component.css']
+    selector: 'app-table-testing',
+    templateUrl: './table-testing.component.html',
+    styleUrls: ['./table-testing.component.css'],
+    standalone: false
 })
 export class TableTestingComponent implements OnInit {
   cars: any[];

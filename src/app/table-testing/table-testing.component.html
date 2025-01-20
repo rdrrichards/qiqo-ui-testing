@@ -1,9 +1,13 @@
 <h3>Dynamic Columns</h3>
-<p-table [columns]="cols" [value]="cars">
+<p-table id="chaTable" [columns]="cols" [value]="(cars | async)" (onSort)="sortTable($event)" [paginator]="true" [rows]="10"
+  [scrollable]="true" scrollHeight="(vh - 200)px"
+  [reorderableColumns]="true" [resizableColumns]="true" [(selection)]="selectedResults" [rowTrackBy]="trackByFunction"
+  [responsive]="true" (onHeaderCheckboxToggle)="headerCheckboxToggled($event)"
+  (onRowSelect)="rowSelected($event)" (onRowUnselect)="rowUnselected($event)" selectionMode="multiple" dataKey="vin">
     <ng-template pTemplate="header" let-columns>
         <tr>
-            <th *ngFor="let col of columns">
-                {{col.header}}
+            <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+                {{col.header}} <p-sortIcon style="font-size: .75em" [field]="col.field"></p-sortIcon>
             </th>
         </tr>
     </ng-template>

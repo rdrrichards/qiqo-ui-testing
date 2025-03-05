@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import Aura from '@primeng/themes/aura';
 
 import { AppComponent } from './app.component';
 import { ShellModule } from './shell/shell.module';
@@ -13,6 +14,7 @@ import { TableTestingComponent } from './table-testing/table-testing.component';
 import { TreeTestingModule } from './tree-testing/tree-testing.module';
 import { DropdownTestingComponent } from './dropdown-testing/dropdown-testing.component';
 import { SoTableComponent } from './so-table/so-table.component';
+import { providePrimeNG } from 'primeng/config';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { SoTableComponent } from './so-table/so-table.component';
     TreeTestingModule,
     SharedModule
   ],
-  providers: [ MessageService, { provide: ErrorHandler, useClass: AppErrorHandler, deps: [ MessageService ] } ],
+  providers: [ MessageService, { provide: ErrorHandler, useClass: AppErrorHandler, deps: [ MessageService ] },
+    providePrimeNG({ theme: { preset: Aura } }) ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

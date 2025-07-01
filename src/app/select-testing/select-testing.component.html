@@ -4,8 +4,10 @@
   <label for="countryCode">Country Code<span class="text-danger">*</span></label>
   <select formControlName="countryCode" class="form-control">
     <!-- <option selected>Select Country</option> -->
-    <option *ngFor="let country of countries" [value]="country.countryCode">
-      {{ country.countryCode }} - {{ country.countryName }}
-    </option>
+    @for (country of countries; track country) {
+      <option [value]="country.countryCode">
+        {{ country.countryCode }} - {{ country.countryName }}
+      </option>
+    }
   </select>
 </form>

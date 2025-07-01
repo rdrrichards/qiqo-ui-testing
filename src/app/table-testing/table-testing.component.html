@@ -4,21 +4,29 @@
   [reorderableColumns]="true" [resizableColumns]="true" [(selection)]="selectedResults" [rowTrackBy]="trackByFunction"
   [responsive]="true" (onHeaderCheckboxToggle)="headerCheckboxToggled($event)"
   (onRowSelect)="rowSelected($event)" (onRowUnselect)="rowUnselected($event)" selectionMode="multiple" dataKey="vin">
-    <ng-template pTemplate="header" let-columns>
-        <tr>
-            <th *ngFor="let col of columns" [pSortableColumn]="col.field">
-                {{col.header}} <p-sortIcon style="font-size: .75em" [field]="col.field"></p-sortIcon>
-            </th>
-        </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-rowData let-columns="columns">
-        <tr>
-            <td *ngFor="let col of columns">
-              <span *ngIf="col.field === 'status'">
-                <i class="pi {{rowData[col.field]}}" style="font-size: 1.75em" [style.color]="rowData['statusColor']"></i>
-              </span>
-              <span *ngIf="col.field !== 'status'">{{rowData[col.field]}}</span>
-            </td>
-        </tr>
-    </ng-template>
+  <ng-template pTemplate="header" let-columns>
+    <tr>
+      @for (col of columns; track col) {
+        <th [pSortableColumn]="col.field">
+          {{col.header}} <p-sortIcon style="font-size: .75em" [field]="col.field"></p-sortIcon>
+        </th>
+      }
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+    <tr>
+      @for (col of columns; track col) {
+        <td>
+          @if (col.field === 'status') {
+            <span>
+              <i class="pi {{rowData[col.field]}}" style="font-size: 1.75em" [style.color]="rowData['statusColor']"></i>
+            </span>
+          }
+          @if (col.field !== 'status') {
+            <span>{{rowData[col.field]}}</span>
+          }
+        </td>
+      }
+    </tr>
+  </ng-template>
 </p-table>
